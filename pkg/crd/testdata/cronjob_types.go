@@ -91,6 +91,9 @@ type CronJobSpec struct {
 	// This tests string slices are allowed as map values.
 	StringSliceData map[string][]string `json:"stringSliceData,omitempty"`
 
+	// This tests recursive slices of strings are allowed as map values
+	RecursiveStringsliceData map[string][][]string `json:"recursiveStringSliceData,omitempty"`
+
 	// This tests pointers are allowed as map values.
 	PtrData map[string]*string `json:"ptrData,omitempty"`
 

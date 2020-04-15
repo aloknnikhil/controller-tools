@@ -5059,6 +5059,13 @@ spec:
                   type: array
                 description: This tests string slices are allowed as map values.
                 type: object
+              recursiveStringSliceData:
+                additionalProperties:
+                  items:
+                    type: array
+                  type: array
+                description: This tests recursive string slices are allowed as map values.
+                type: object
               structWithSeveralFields:
                 description: A struct that can only be entirely replaced
                 properties:
